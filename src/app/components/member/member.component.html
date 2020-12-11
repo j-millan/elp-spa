@@ -1,0 +1,18 @@
+<h1 class="animated fadeIn">{{ member.name.first | uppercase }} {{ member.name.last | uppercase }}</h1>
+<hr>
+<div class="columns animated fadeIn fast">
+    <div class="column is-one-quarter">
+        <figure class="image">
+            <img [src]="member.img" alt="">
+        </figure>
+        <button (click)="goBack()" class="button is-danger is-outlined is-fullwidth mt-3">Go back</button>
+    </div>
+    <div class="column">
+        <p class="is-size-4">
+            {{ member.bio }}
+        </p>
+        <p class="is-size-5 has-text-grey">
+            Birth date: {{ member.birth }}
+        </p>
+    </div>
+</div>

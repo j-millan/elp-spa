@@ -1,0 +1,13 @@
+.navbar-item {
+    color: hsl(0, 0%, 75%) !important;
+}
+
+.navbar-item.active {
+    color: hsl(0, 0%, 100%) !important;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: none;
+}
