@@ -1,0 +1,14 @@
+<div class="card animated fadeIn fast">
+    <div class="card-image">
+        <figure class="image m-0">
+            <img [src]="member.img" alt="{{ member.name.first }} {{ member.name.last }} 1970">
+        </figure>
+    </div>
+    <div class="card-content p-3">
+        <p class="title is-4 mb-2">{{ member.name.first }} {{ member.name.last }}</p>
+        <div class="is-size-6">
+            {{ member.bio }}
+        </div>
+        <button (click)="goToMember()" class="button is-info is-outlined is-fullwidth is-small mt-3">See more...</button>
+    </div>
+</div>

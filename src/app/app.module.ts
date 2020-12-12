@@ -13,6 +13,7 @@ import { MembersService } from './services/members.service';
 import { APP_ROUTING } from './app.routing';
 import { MemberComponent } from './components/member/member.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { MemberCardComponent } from './components/member-card/member-card.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     MembersComponent,
     MemberComponent,
     SearchResultsComponent,
+    MemberCardComponent,
   ],
   imports: [
     BrowserModule,

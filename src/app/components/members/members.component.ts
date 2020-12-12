@@ -16,7 +16,7 @@ export class MembersComponent implements OnInit {
   constructor(
     private membersService: MembersService,
     private router: Router
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.members = this.membersService.getMembers();
@@ -25,5 +25,4 @@ export class MembersComponent implements OnInit {
   goToMember(id: number): void {
     this.router.navigate(['member', id]);
   }
-
 }

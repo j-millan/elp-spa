@@ -5,14 +5,3 @@
     justify-content: center;
     align-items: flex-start;
 }
-
-.card {
-    max-width: 288px;
-    display: inline-block;
-    margin: 10px;
-    padding-bottom: 7px;
-}
-
-.card-content {
-    padding-top: 10px;
-}

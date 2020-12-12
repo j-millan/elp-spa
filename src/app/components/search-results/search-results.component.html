@@ -4,19 +4,6 @@
     <h1>Search results for: {{ query }}</h1>
     <hr>
     <div class="members">
-        <div class="card animated fadeIn fast" *ngFor="let result of results; let id=index">
-            <div class="card-image">
-                <figure class="image m-0">
-                    <img [src]="result.member.img" alt="{{ result.member.name.first }} {{ result.member.name.last }} 1970">
-                </figure>
-            </div>
-            <div class="card-content p-3">
-                <p class="title is-4 mb-2">{{ result.member.name.first }} {{ result.member.name.last }}</p>
-                <div class="is-size-6">
-                    {{ result.member.bio }}
-                </div>
-                <button [routerLink]="['/member', result.id]" class="button is-info is-outlined is-fullwidth is-small mt-3">See more...</button>
-            </div>
-        </div>
+        <app-member-card *ngFor="let result of results;" [member]="result.member" [id]="result.id">loading member info</app-member-card>
     </div>
 </div>
